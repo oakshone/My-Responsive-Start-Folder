@@ -329,11 +329,9 @@ body {
   height: 100%;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
-  color: #333;
 }
 
 #headerWrapper {
-  background-color: darkgrey;
   color: #001adb;
 }
 
@@ -341,30 +339,29 @@ header {
   display: flex;
   align-items: flex-end;
   padding: 1rem 16px;
-  gap: 8px;
   color: black;
 }
 header h1 {
+  display: block;
   margin: 0;
   font-size: 1.2rem;
   font-weight: 300;
 }
 
 #navWrapper {
-  background-color: grey;
+  background-color: none;
 }
 
 nav ul {
+  background-color: grey;
   list-style-type: none;
-  padding: 0;
-  margin: 0;
   display: flex;
 }
 nav ul li {
   flex: 1;
 }
 nav li.active {
-  background-color: grey;
+  background-color: #beb6bd;
 }
 nav a {
   display: block;
@@ -374,19 +371,33 @@ nav a {
   text-decoration: none;
 }
 nav a:hover {
-  color: grey;
+  color: black;
 }
 
-#footerWrapper {
-  background-color: rgb(122, 116, 116);
+section {
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
-footer {
-  padding: 0.5rem 16px;
+section div {
+  width: 100%;
+  padding: 1rem 16px;
 }
-footer p {
-  margin: 0;
-  font-weight: 200;
+section div img {
+  width: 100%;
+  height: auto;
+  background-color: purple;
+  border: solid pink;
+  border-radius: 0.5rem;
+}
+
+#mainWrapper {
+  display: flex;
+  background-color: none;
+}
+
+h2 {
+  display: grid;
   text-align: center;
 }
 
@@ -397,10 +408,16 @@ footer p {
   header h1 {
     font-size: 2rem;
   }
+  section {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 @media only screen and (min-width: 60rem) {
   header, nav, main, footer {
     max-width: 60rem;
-    margin: auto;
+    margin: 0 auto;
+  }
+  section {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }

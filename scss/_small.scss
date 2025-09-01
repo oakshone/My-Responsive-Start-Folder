@@ -26,7 +26,7 @@ header {
   display: flex;
   align-items: flex-end;
   padding: 1rem $gutter;
-  //color: black;
+  color: black;
   h1 {
     display: block;
     margin: 0;
@@ -35,10 +35,11 @@ header {
   }
 }
 #navWrapper {
-  //background-color: black;
+  background-color: none;
 }
 nav {
   ul {
+    background-color: grey;
     list-style-type: none;
     display: flex;
     li {
@@ -46,17 +47,31 @@ nav {
     }
   }
   li.active {
-    //background-color: black;
+    background-color: #beb6bd;
   }
   a {
     display: block;
     padding: 0.75rem;
-    //color: black;
+    color: black;
     text-align: center;
     text-decoration: none;
     &:hover {
-      //color: black;
+      color: black;
     }
+  }
+}
+section {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+section div {
+  width: 100%;
+  padding: 1rem $gutter;
+  img {width: 100%;
+  height: auto;
+  background-color: purple;
+  border: solid pink;
+  border-radius: .5rem;
   }
 }
 #mainWrapper {
@@ -65,6 +80,7 @@ nav {
 }
 h2 {
   display: grid;
+  text-align: center;
 }
 
 
@@ -79,15 +95,15 @@ h2 {
 
 
 
-// begin the footer
-#footerWrapper {
-    //background-color: rgb(122, 116, 116);
-}
-footer {
-    padding: 0.5rem $gutter;
-    p {
-        margin: 0;
-        font-weight: $lightWeight;
-        text-align: center;
-    }
-}
+// // begin the footer
+// #footerWrapper {
+//     background-color: rgb(122, 116, 116);
+// }
+// footer {
+//     padding: 0.5rem $gutter;
+//     p {
+//         margin: 0;
+//         font-weight: $lightWeight;
+//         text-align: center;
+//     }
+// }
