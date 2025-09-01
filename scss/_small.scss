@@ -20,7 +20,6 @@ body {
 }
 
 #headerWrapper {
-  background-color: darkgrey;
   color: $secondaryColor;
 }
 header {
@@ -49,7 +48,6 @@ nav {
     }
   }
   li.active {
-    background-color: grey;
   }
   a {
     display: block;
