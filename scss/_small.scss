@@ -26,7 +26,7 @@ header {
   display: flex;
   align-items: flex-end;
   padding: 1rem $gutter;
-  color: black;
+  //color: black;
   h1 {
     display: block;
     margin: 0;
@@ -35,7 +35,7 @@ header {
   }
 }
 #navWrapper {
-  background-color: black;
+  //background-color: black;
 }
 nav {
   ul {
@@ -46,21 +46,22 @@ nav {
     }
   }
   li.active {
-    background-color: black;
+    //background-color: black;
   }
   a {
     display: block;
     padding: 0.75rem;
-    color: black;
+    //color: black;
     text-align: center;
     text-decoration: none;
     &:hover {
-      color: black;
+      //color: black;
     }
   }
 }
 #mainWrapper {
   display: flex;
+  background-color: none;
 }
 h2 {
   display: grid;
@@ -80,7 +81,7 @@ h2 {
 
 // begin the footer
 #footerWrapper {
-    background-color: rgb(122, 116, 116);
+    //background-color: rgb(122, 116, 116);
 }
 footer {
     padding: 0.5rem $gutter;
