@@ -385,9 +385,9 @@ section div {
 }
 section div img {
   width: 100%;
+  box-shadow: 10px 10px;
   height: auto;
-  background-color: purple;
-  border: solid pink;
+  border: solid grey;
   border-radius: 0.5rem;
 }
 
@@ -397,8 +397,14 @@ section div img {
 }
 
 h2 {
+  color: #beb6bd;
   display: grid;
   text-align: center;
+}
+
+h3 {
+  text-align: right;
+  vertical-align: top;
 }
 
 @media only screen and (min-width: 35rem) {

@@ -68,9 +68,9 @@ section div {
   width: 100%;
   padding: 1rem $gutter;
   img {width: 100%;
+  box-shadow: 10px 10px;
   height: auto;
-  background-color: purple;
-  border: solid pink;
+  border: solid grey;
   border-radius: .5rem;
   }
 }
@@ -79,8 +79,14 @@ section div {
   background-color: none;
 }
 h2 {
+  color: #beb6bd;
   display: grid;
   text-align: center;
+}
+
+h3 {
+  text-align: right;
+  vertical-align: top;
 }
 
 
