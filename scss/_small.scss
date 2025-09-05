@@ -12,6 +12,7 @@ html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 body {
   height: 100%;
   font-family: $defaultFont;
@@ -24,16 +25,14 @@ body {
   justify-content: space-between;
 }
 header {
-  background-color: black;
-  margin-bottom: 20px;
   display: flex;
   align-items: flex-end;
-  padding: 3rem $gutter;
+  padding: 2rem $gutter;
   color: black;
   h1 {
     color:#beb6bd;
-    display: block;
-    margin: 0;
+    display: flex;
+    margin: 1rem;
     font-size: 1.2rem;
     font-weight: $normalWeight;
   }
@@ -45,7 +44,8 @@ nav {
   ul {
     background-color: grey;
     list-style-type: none;
-    display: flex;
+    display: block;
+    
     li {
       flex: 1;
     }
@@ -60,7 +60,7 @@ nav {
     text-align: center;
     text-decoration: none;
     &:hover {
-      color: black;
+      color: #beb6bd;
     }
   }
 }
@@ -86,34 +86,19 @@ h2 {
   color: #beb6bd;
   display: grid;
   text-align: center;
+  border: #beb6bd;
+  border-radius: 2px;
+}
+#numberWrapper {
+  float: right;
+  position: relative;
+  justify-content: space-evenly;
+  margin: 1rem;
 }
 
-h3 {
-  text-align: right;
-  vertical-align: top;
+#footerWrapper {
+  text-align: center;
+  clear: both;
+  background-color: #beb6bd;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-// // begin the footer
-// #footerWrapper {
-//     background-color: rgb(122, 116, 116);
-// }
-// footer {
-//     padding: 0.5rem $gutter;
-//     p {
-//         margin: 0;
-//         font-weight: $lightWeight;
-//         text-align: center;
-//     }
-// }

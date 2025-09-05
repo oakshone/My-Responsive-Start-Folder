@@ -333,17 +333,19 @@ body {
 
 #headerWrapper {
   color: #001adb;
+  justify-content: space-between;
 }
 
 header {
   display: flex;
   align-items: flex-end;
-  padding: 1rem 16px;
+  padding: 2rem 16px;
   color: black;
 }
 header h1 {
-  display: block;
-  margin: 0;
+  color: #beb6bd;
+  display: flex;
+  margin: 1rem;
   font-size: 1.2rem;
   font-weight: 300;
 }
@@ -355,7 +357,7 @@ header h1 {
 nav ul {
   background-color: grey;
   list-style-type: none;
-  display: flex;
+  display: block;
 }
 nav ul li {
   flex: 1;
@@ -371,7 +373,7 @@ nav a {
   text-decoration: none;
 }
 nav a:hover {
-  color: black;
+  color: #beb6bd;
 }
 
 section {
@@ -400,11 +402,21 @@ h2 {
   color: #beb6bd;
   display: grid;
   text-align: center;
+  border: #beb6bd;
+  border-radius: 2px;
 }
 
-h3 {
-  text-align: right;
-  vertical-align: top;
+#numberWrapper {
+  float: right;
+  position: relative;
+  justify-content: space-evenly;
+  margin: 1rem;
+}
+
+#footerWrapper {
+  text-align: center;
+  clear: both;
+  background-color: #beb6bd;
 }
 
 @media only screen and (min-width: 35rem) {
