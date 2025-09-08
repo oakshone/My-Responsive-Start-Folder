@@ -25,9 +25,9 @@ body {
   justify-content: space-between;
 }
 header {
-  display: flex;
+  display: grid;
   align-items: flex-end;
-  padding: 2rem $gutter;
+
   color: black;
   h1 {
     color:#beb6bd;
@@ -89,13 +89,6 @@ h2 {
   border: #beb6bd;
   border-radius: 2px;
 }
-#numberWrapper {
-  float: right;
-  position: relative;
-  justify-content: space-evenly;
-  margin: 1rem;
-}
-
 #footerWrapper {
   text-align: center;
   clear: both;
