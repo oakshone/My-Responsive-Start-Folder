@@ -14,6 +14,7 @@ html {
 }
 
 body {
+  margin: 0;
   height: 100%;
   font-family: $defaultFont;
   font-weight: $normalWeight;
@@ -47,6 +48,8 @@ nav {
     display: block;
     
     li {
+      margin: 0;
+      padding: 0;
       flex: 1;
     }
   }
@@ -61,6 +64,8 @@ nav {
     text-decoration: none;
     &:hover {
       color: #beb6bd;
+      margin: 0;
+      padding: 0;
     }
   }
 }
