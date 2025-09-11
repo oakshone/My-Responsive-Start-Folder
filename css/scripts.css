@@ -333,7 +333,7 @@ body {
 }
 
 #headerWrapper {
-  background-color: darkgrey;
+  background-color: whitesmoke;
   color: #001adb;
 }
 
@@ -345,6 +345,7 @@ header {
   color: black;
 }
 header h1 {
+  background-color: whitesmoke;
   margin: 0;
   font-size: 1.2rem;
   font-weight: 300;
@@ -364,7 +365,7 @@ nav ul li {
   flex: 1;
 }
 nav li.active {
-  background-color: grey;
+  background-color: whitesmoke;
 }
 nav a {
   display: block;
@@ -388,6 +389,18 @@ footer p {
   margin: 0;
   font-weight: 200;
   text-align: center;
+}
+
+video {
+  width: 90%;
+  margin-left: 5%;
+}
+
+details {
+  margin: 1rem 16px;
+}
+details summary {
+  background-color: grey;
 }
 
 @media only screen and (min-width: 35rem) {

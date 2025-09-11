@@ -30,6 +30,7 @@ header {
   gap: 8px;
   color: black;
   h1 {
+    background-color: whitesmoke;
     margin: 0;
     font-size: 1.2rem;
     font-weight: $normalWeight;
@@ -49,7 +50,7 @@ nav {
     }
   }
   li.active {
-    background-color: grey;
+    background-color: whitesmoke;
   }
   a {
     display: block;
@@ -73,4 +74,16 @@ footer {
         font-weight: $lightWeight;
         text-align: center;
     }
+}
+video {
+  width: 90%;
+  margin-left: 5%;
+}
+
+details {
+  margin: 1rem $gutter;
+  summary {
+    
+    background-color: grey;
+  }
 }
