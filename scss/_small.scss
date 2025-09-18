@@ -19,23 +19,19 @@ body {
   color: $fontColor;
 }
 
-#headerWrapper {
-  background-color: whitesmoke;
-  color: $secondaryColor;
-}
+#headerWrapper {border-bottom: 1px solid $greyColor;}
 header {
-  display: flex;
-  align-items: flex-end;
-  padding: 1rem $gutter;
-  gap: 8px;
-  color: black;
-  h1 {
-    background-color: whitesmoke;
-    margin: 0;
-    font-size: 1.2rem;
-    font-weight: $normalWeight;
-  }
-}
+    display: flex;
+    grid-template-columns: 50px auto;
+    column-gap: $gutter;
+    align-items: center; 
+    padding: .5rem $gutter;
+    span {
+        font-size: 2rem;
+        font-weight: $boldWeight;
+        color: $primaryColor;
+    }
+} // end header
 #navWrapper {
   background-color: grey;
 }
@@ -86,4 +82,9 @@ details {
     
     background-color: grey;
   }
+}
+#hero {
+  position: relative;
+  width: 100%;
+  height: auto;
 }
