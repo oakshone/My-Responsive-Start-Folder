@@ -30,9 +30,13 @@ header {
         color: $primaryColor;
     }
 } // end header
-h1 {
-  padding-left: 1rem $gutter;
+main {
+  text-align: center;
 }
+h1 {
+  padding-left: 20px;
+}
+
 #navWrapper {
   background-color: grey;
 }
