@@ -22,16 +22,17 @@ body {
 #headerWrapper {border-bottom: 1px solid $greyColor;}
 header {
     display: flex;
-    grid-template-columns: 50px auto;
-    column-gap: $gutter;
     align-items: center; 
-    padding: .5rem $gutter;
+    padding: 1rem $gutter;
     span {
         font-size: 2rem;
         font-weight: $boldWeight;
         color: $primaryColor;
     }
 } // end header
+h1 {
+  padding-left: 1rem $gutter;
+}
 #navWrapper {
   background-color: grey;
 }
