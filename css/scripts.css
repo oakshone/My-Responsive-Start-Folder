@@ -333,22 +333,22 @@ body {
 }
 
 #headerWrapper {
-  background-color: whitesmoke;
-  color: #001adb;
+  border-bottom: 1px solid black;
 }
 
 header {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   padding: 1rem 16px;
-  gap: 8px;
-  color: black;
 }
-header h1 {
-  background-color: whitesmoke;
-  margin: 0;
-  font-size: 1.2rem;
-  font-weight: 300;
+header span {
+  font-size: 2rem;
+  font-weight: 800;
+  color: grey;
+}
+
+h1 {
+  margin-left: 20px;
 }
 
 #navWrapper {
@@ -365,7 +365,7 @@ nav ul li {
   flex: 1;
 }
 nav li.active {
-  background-color: whitesmoke;
+  background-color: lightgray;
 }
 nav a {
   display: block;
@@ -375,7 +375,7 @@ nav a {
   text-decoration: none;
 }
 nav a:hover {
-  color: grey;
+  color: rgb(255, 255, 255);
 }
 
 #footerWrapper {
@@ -403,6 +403,12 @@ details summary {
   background-color: grey;
 }
 
+#hero {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
 @media only screen and (min-width: 35rem) {
   header {
     padding: 2rem 16px;
@@ -412,8 +418,8 @@ details summary {
   }
 }
 @media only screen and (min-width: 60rem) {
-  header, nav, main, footer {
-    max-width: 60rem;
+  header, nav, main {
+    max-width: 960px;
     margin: auto;
   }
 }
