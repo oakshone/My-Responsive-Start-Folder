@@ -340,6 +340,7 @@ header {
   display: flex;
   align-items: center;
   padding: 1rem 16px;
+  gap: 8px;
 }
 header span {
   font-size: 2rem;
@@ -359,7 +360,6 @@ nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  display: flex;
 }
 nav ul li {
   flex: 1;
@@ -415,6 +415,19 @@ details summary {
   }
   header h1 {
     font-size: 2rem;
+  }
+  nav ul {
+    display: flex;
+    justify-content: flex-start;
+    -moz-column-gap: 16px;
+         column-gap: 16px;
+  }
+  nav ul li a {
+    margin: 10px 0;
+  }
+  nav ul li a:hover {
+    -webkit-text-decoration: underline 2px #db0000;
+            text-decoration: underline 2px #db0000;
   }
 }
 @media only screen and (min-width: 60rem) {

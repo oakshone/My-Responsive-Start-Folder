@@ -24,6 +24,7 @@ header {
     display: flex;
     align-items: center; 
     padding: 1rem $gutter;
+    gap: 8px;
     span {
         font-size: 2rem;
         font-weight: $boldWeight;
@@ -42,7 +43,6 @@ nav {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    display: flex;
     li {
       flex: 1;
     }
