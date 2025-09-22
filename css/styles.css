@@ -338,42 +338,40 @@ body {
 
 header {
   display: flex;
-  align-items: flex-end;
-  padding: 2rem 16px;
+  align-items: center;
   color: black;
 }
 header h1 {
+  margin: 0;
   color: #beb6bd;
-  display: flex;
-  margin: 1rem;
   font-size: 1.2rem;
   font-weight: 300;
 }
 
 #navWrapper {
-  background-color: none;
+  background-color: black;
 }
 
 nav ul {
-  background-color: grey;
   list-style-type: none;
-  display: flex;
+  padding: 0;
+  margin: 0;
 }
 nav ul li {
   flex: 1;
 }
 nav li.active {
-  background-color: #beb6bd;
+  background-color: grey;
 }
 nav a {
-  display: block;
   padding: 0.75rem;
-  color: black;
-  text-align: center;
+  color: white;
   text-decoration: none;
+  display: block;
+  text-align: center;
 }
 nav a:hover {
-  color: #beb6bd;
+  color: grey;
 }
 
 section {
@@ -394,7 +392,6 @@ section div img {
 }
 
 #mainWrapper {
-  display: flex;
   background-color: none;
 }
 
@@ -406,17 +403,14 @@ h2 {
   border-radius: 2px;
 }
 
-#numberWrapper {
-  float: right;
-  position: relative;
-  justify-content: space-evenly;
-  margin: 1rem;
-}
-
 #footerWrapper {
   text-align: center;
   clear: both;
   background-color: #beb6bd;
+}
+
+h3 {
+  text-decoration: none;
 }
 
 @media only screen and (min-width: 35rem) {
@@ -426,14 +420,24 @@ h2 {
   header h1 {
     font-size: 2rem;
   }
-  section {
-    grid-template-columns: 1fr 1fr;
+  nav ul {
+    display: flex;
+    justify-content: flex-start;
+    -moz-column-gap: 16px;
+         column-gap: 16px;
+  }
+  nav ul li a {
+    margin: 10px 0;
+  }
+  nav ul li a:hover {
+    -webkit-text-decoration: underline 2px #db0000;
+            text-decoration: underline 2px #db0000;
   }
 }
-@media only screen and (min-width: 60rem) {
-  header, nav, main, footer {
-    max-width: 60rem;
-    margin: 0 auto;
+@media only screen and (min-width: 64rem) {
+  header, nav, main {
+    max-width: 960px;
+    margin: auto;
   }
   section {
     grid-template-columns: 1fr 1fr 1fr;

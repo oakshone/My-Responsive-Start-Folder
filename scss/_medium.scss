@@ -2,9 +2,16 @@ header {
     padding: 2rem $gutter;
     h1 {font-size: 2rem;}
 }
-section {
-  grid-template-columns: 1fr 1fr;
-}
 nav {
-  max-width: 640px;
-}
+  ul {
+    display: flex;
+    justify-content: flex-start;
+    column-gap: $gutter;
+  }
+  ul li a {
+    margin: 10px 0;
+  }
+  ul li a:hover {
+    text-decoration: underline 2px $primaryColor;
+  } // end hover
+} // end nav
