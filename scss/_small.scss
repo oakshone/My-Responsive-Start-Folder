@@ -26,14 +26,13 @@ body {
   justify-content: space-between;
 }
 header {
-  display: grid;
+  display: flex;
   align-items: flex-end;
 
   color: black;
   h1 {
+    padding-left: 20px;
     color:#beb6bd;
-    display: flex;
-    margin: 1rem;
     font-size: 1.2rem;
     font-weight: $normalWeight;
   }
@@ -43,13 +42,12 @@ header {
 }
 nav {
   ul {
-    background-color: grey;
     list-style-type: none;
-    display: block;
+    padding: 0;
+    margin: 0;
+    display: flex;
     
     li {
-      margin: 0;
-      padding: 0;
       flex: 1;
     }
   }
@@ -64,8 +62,6 @@ nav {
     text-decoration: none;
     &:hover {
       color: #beb6bd;
-      margin: 0;
-      padding: 0;
     }
   }
 }
