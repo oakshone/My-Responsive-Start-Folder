@@ -404,6 +404,11 @@ details summary {
   background-color: grey;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 #hero {
   position: relative;
   width: 100%;
